@@ -1,0 +1,110 @@
+Anotações dia 1.4 
+# Considere o arquivo nomes.txt para os exemplos a seguir
+# Seu conteúdo inicial é:
+Ana
+Maria
+João
+
+# O > redireciona a saída padrão para um arquivo, sendo assim
+# caso haja algum conteúdo no arquivo, ele será substituído
+
+cat > nomes.txt
+# Digite o nome "Amanda" e encerre o cat (Ctrl + D)
+
+cat nomes.txt
+# Resultado
+Amanda
+
+# O >> anexa a saída padrão a um arquivo. Sendo assim, ele adiciona
+# o que for digitado ao final do arquivo em questão
+
+cat >> nomes.txt
+# Digite o nome "Fernanda", depois `enter` e o nome "Fabiano", e encerre o cat (Ctrl + D)
+
+cat nomes.txt
+# Resultado
+Amanda
+Fernanda
+Fabiano
+
+# O | canaliza a saída do primeiro comando para a entrada do segundo,
+# dessa forma conseguimos realizar comandos de forma sucessiva
+
+# Considere que queremos uma lista com todos os nomes que contenham
+# a letra "F" e que nosso resultado esteja em ordem alfabética
+# Para isso podemos realizar o comando abaixo
+
+grep F nomes.txt | sort
+# Resultado
+Fabiano
+Fernanda
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+  Permissões | Links  | Proprietário | Grupo | Tamanho | Data e Hora   | Nome
+  -----------|--------|--------------|-------|---------|---------------|---------
+  drwxr-xr-x | 2      | root         | root  | 4096    | Out 19 09:10  | composer/
+
+
+Permissões => É possível verificar o tipo do item e nível de permissão para Leitura, Escrita e Execução de item ou diretório;
+Links => Número de ligações que o item possui, no caso do diretório, número de subdiretórios que possui;
+Proprietário => Quem é a pessoa dona, quem criou. É o diretório padrão da pessoa usuária, o home;
+Grupo => Grupo ao qual pertence o item ou diretório. Utilizado para dar permissões à outras pessoas;
+Tamanho => Em Bytes;
+Data e Hora => Momento em que foi criado ou última modificação;
+Nome => Nome do item ou diretório;
+
+Você aprendeu no vídeo como alterar as permissões no modo literal (caracteres), mas também é possível usar o modo octal. Para compreendermos esta outra forma, precisamos entender que eles são administrados por meio de valores como descrito abaixo:
+Leitura r - 4
+Escrita w - 2
+Execução x - 1
+Esses valores são permissões com base em bits de ligados = 1 e desligados = 0 ,
+Copiar
+rwx = 111 ( 7 | Acesso Total )
+r-- = 100 ( 4 | Somente Leitura )
+-w- = 010 ( 2 | Somente Escrita )
+--x = 001 ( 1 | Somente Execução )
+rw- = 110 ( 6 | Somente Leitura e Escrita )
+r-x = 101 ( 5 | Somente Leitura e Execução )
+-wx = 011 ( 3 | Somente Escrita e Execução )
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+# Para listar todos os arquivos que terminam em .txt
+find . -name "*.txt"
+
+# Para localizar todos os diretórios
+find . -type d
+
+# Para localizar todos os arquivos
+find . -type f
+
+# Localizar tanto arquivos quanto diretórios que comecem
+# por algum trecho
+find ./teste -name "exemplo*"
+# Resultado
+./teste/exemplo.txt
+./teste/exemplo
+
+# Localizar somente arquivos que comecem por algum trecho
+find ./teste -type f -name "exemplo*"
+# Resultado
+./teste/exemplo.txt
+
+# Localizar somente diretórios que comecem por algum trecho
+find ./teste -type d -name "exemplo*"
+# Resultado
+./teste/exemplo
+--- = 000 ( 0 | Todos Acessos Negados )
+
+
+echo "Este é um teste"
+# Resultado
+Este é um teste
+
+# Pode ser usado para colocar textos dentro de arquivos.
+echo "Este é mais um teste" > teste.txt
+cat teste.txt
+Este é mais um teste
+
+

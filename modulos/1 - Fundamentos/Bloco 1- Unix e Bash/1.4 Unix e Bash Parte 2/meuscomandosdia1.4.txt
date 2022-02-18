@@ -1,0 +1,611 @@
+    2  clean
+    3  sudo add-apt-repository ppa:graphics-drivers/ppa
+    4  sudo add-apt-repository ppa:noobslab/icons -y
+    5  sudo apt install papirus-icon-theme -y
+    6  sudo apt install nemo-fileroller -y
+    7  sudo apt install plank -y
+    8  sudo apt install ./zoom_amd64.deb
+    9  su -  
+   10  sudo update-alternatives --config x-www-browser
+   11  sudo su
+   12  xfce4-settings-manager
+   13  su udo
+   14  sdo
+   15  sudo
+   16  sudo su
+   17  sudo update-alternatives --config x-www-browser
+   18  sudo
+   19  update-alternatives --install /usr/bin/x-www-browser x-www-browser sistema_de_arquivos/snap/opera/current/usr/share/applications 0
+   20  update-alternatives --install /usr/bin/x-www-browser x-www-snap/opera/current/usr/share/applications 0
+   21  chmod +x micclient-x86_64.AppImage
+   22  sudo insmod wo_snd_capture-x86.ko
+   23  cd /home/rafaelrocha/Downloads
+   24  chmod a+x micclient-ubuntu-x86
+   25  chmod a+x micclient-ubuntu-x86_64
+   26  chmod a+x micclient-ubuntu-x86_x64
+   27  chmod a+x micclient-ubuntu-x86_64
+   28  chmod a+x micclient-x86_64
+   29  chmod a+x micclient-xubuntu-x86_64
+   30  chmod a+x micclient-ubuntu-x86_64
+   31  chmod a+x micclient-ubuntu-x86_x64
+   32  chmod a+x micclient-xubuntu-x86_x64
+   33  cd/home/rafaelrocha/Downloads
+   34  cd /home/rafaelrocha/Downloads
+   35  chmod a+x micclient-x86_64
+   36  chmod a+x micclient-x86_x64
+   37  cd /home/rafaelrocha/Downloads
+   38  chmod +x micclient-x86_64.AppImage
+   39  sudo modprobe snd-aloop
+   40  cd /home/rafaelrocha/Downloads
+   41  /micclient-x86_64.AppImage -t Wifi 192.168.100.2
+   42  ./micclient-x86_64.AppImage -t Wifi 192.168.100.2
+   43  sudo dnf install linux-headers-`uname -r`
+   44  cd /tmp/
+   45  wget -O droidcam_latest.zip https://files.dev47apps.net/linux/droidcam_1.8.0.zip
+   46  # sha1sum: 3f94d6ec57a191ad146392fcf094b205e375e1ef
+   47  unzip droidcam_latest.zip -d droidcam
+   48  sudo ./install-client
+   49  sudo rm -Rf /opt/droidcam*
+   50  sudo apt install gcc make adb usbmuxd linux-headers-`uname -r`
+   51  cd /tmp/
+   52  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+   53  unzip droidcam_latest.zip -d droidcam && cd droidcam
+   54  sudo ./install-client
+   55  sudo ./install-video
+   56  sudo ./install-sound
+   57  sudo apt install menulibre
+   58  cd droidcam*/
+   59  sudo /opt/droidcam-uninstall
+   60  sudo rm -Rf /opt/droidcam*
+   61  sudo rm -Rf /usr/bin/droidcam
+   62  sudo rm -Rf /usr/share/applications/droidcam.desktop
+   63  sudo apt-get install linux-headers-`uname -r`
+   64  wget https://www.dev47apps.com/files/600/droidcam-64bit.tar.bz2 -O droidcam.tar.bz2
+   65  sudo tar -xjvf droidcam.tar.bz2
+   66  cd droidcam*/
+   67  cd droidcam/
+   68  cd /home/rafaelrocha/droidcam
+   69  sudo ./install
+   70  cd /tmp/
+   71  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+   72  unzip droidcam_latest.zip -d droidcam && cd droidcam
+   73  sudo ./install-client
+   74  sudo ./install-video
+   75  sudo ./install-sound
+   76  sudo apt install pavucontrol 
+   77  pavucontrol
+   78  pactl load-module module-echo-cancel aec_method=webrtc sink_properties=device.description="Noise_Reduction" aec_args="analog_gain_control=0\ digital_gain_control=0"
+   79  pactl list short sources
+   80  pactl set-default-sink 'alsa_input.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.mono-fallback'
+   81  pactl set-default-sink 'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo.monitor'
+   82  pactl set-default-sink <'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo.monitormodule-alsa-card.c'>
+   83  pactl set-default-sink <'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo.monitor'>
+   84  pacmd list-cards
+   85  pacmd set-card-profile 0 output:analog-stereo
+   86  /etc/pulse/default.pa
+   87  pactl list short sinks 
+   88  set-default-sink 'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo'
+   89  set-default-sink <'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo'>
+   90  set-default-sink 'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo'
+   91  Sudo -H gedit /etc/Pulse/default.pa
+   92  sudo -H gedit /etc/Pulse/default.pa
+   93  lsb_release -rcs
+   94  sudo add-apt-repository ppa:nilarimogard/webupd8
+   95  sudo apt-get update
+   96  sudo apt-get install pulseaudio-equalizer
+   97  sudo apt-get remove pulseaudio-equalizer --auto-remove
+   98  wget https://launchpad.net/~mikhailnov/+archive/ubuntu/pulseeffects/+files/pulseeffects_4.1.2-2~bionic1_amd64.deb -O pulseeffects.deb
+   99  wget  https://launchpad.net/~yunnxx/+archive/ubuntu/gnome3/+files/pulseeffects_1.312entornosgnulinuzesty-1ubuntu1_amd64.deb -O pulseeffects.deb
+  100  sudo dpkg -i pulseeffects.deb
+  101  sudo apt-get install -f
+  102  sudo gedit /etc/pulse/default.pa 
+  103  sudo apt-get install gedit
+  104  sudo gedit /etc/pulse/default.pa
+  105  pulseaudio -k
+  106  sudo gedit /etc/pulse/default.pa
+  107  pulseaudio -k
+  108  sudo gedit /etc/pulse/default.pa
+  109  pulseaudio -k
+  110  sudo rm -Rf /opt/droidcam*
+  111  sudo rm -Rf /usr/bin/droidcam
+  112  sudo rm -Rf /usr/share/applications/droidcam.desktop
+  113  sudo apt-get install linux-headers-`uname -r`
+  114  sudo /opt/droidcam-uninstall
+  115  sudo apt install gcc make adb usbmuxd linux-headers-`uname -r`
+  116  cd /tmp/
+  117  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+  118  unzip droidcam_latest.zip -d droidcam && cd droidcam
+  119  sudo ./install-client
+  120  sudo ./install-video
+  121  sudo /opt/droidcam-uninstall
+  122  sudo apt install gcc make adb usbmuxd linux-headers-`uname -r`
+  123  cd /tmp/
+  124  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+  125  unzip droidcam_latest.zip -d droidcam && cd droidcam
+  126  sudo ./install-client
+  127  sudo ./install-video
+  128  sudo ./install-sound
+  129  sudo apt install curl
+  130  tail ~/.bashrc
+  131  source ~/.bashrc
+  132  nvm
+  133  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+  134  ~/.nvm
+  135  nvm
+  136  command -v nvm
+  137  nvm
+  138  nvm install lts/*
+  139  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+  140  tail ~/.bashrc
+  141  nvm
+  142  source ~/.bashrc
+  143  nvm install 14
+  144  nvm use 14
+  145  node -v
+  146  sudo apt-get install hddtemp lm-sensors
+  147  sudo sensors-detect
+  148  sudo service module-init-tools começar
+  149  sudo apt-get install psensor
+  150  sudo /opt/droidcam-uninstall
+  151  sudo apt install gcc make adb usbmuxd linux-headers-`uname -r`
+  152  cd /tmp/
+  153  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+  154  unzip droidcam_latest.zip -d droidcam && cd droidcam
+  155  sudo ./install-client
+  156  sudo ./install-sound
+  157  sudo ./install-video
+  158  sudo apt-get update
+  159  sudo apt-get install git
+  160  git --version
+  161  git config --global user.name "Rafael Rocha"
+  162  git config --global usar.email "1rafaelrocha2@gmail.com"
+  163  cd /
+  164  cd/
+  165  cd /
+  166  ls
+  167  ls -a
+  168  ls
+  169  cd users
+  170  cd usr
+  171  ls
+  172  clear
+  173  ls
+  174  cd games
+  175  mkdir gametrybe
+  176  ls
+  177  cd usr
+  178  cd ..
+  179  ls
+  180  mkdir music
+  181  cd ..
+  182  cd home
+  183  ls
+  184  pwd
+  185  ls
+  186  cd Música
+  187  ls
+  188  mkdir music
+  189  ls
+  190  clear
+  191  cd /
+  192  ls
+  193  cd home
+  194  mkdir unix_tests
+  195  ls
+  196  cd rafaelrocha
+  197  mkdir unix_tests
+  198  cd unix_tests
+  199  mk trybe.txt
+  200  cat trybe.txt
+  201  touch trybe.txt
+  202  ls
+  203  cp trybe.txt trybe_backup.txt
+  204  ls
+  205  mv trybe.txt trybe-teste.txt
+  206  ls
+  207  mkdir backup
+  208  ls
+  209  mv trybe_backup.txt /backup
+  210  ls
+  211  mv trybe_backup.txt backup/
+  212  ls
+  213  cd backup
+  214  ls
+  215  cd ..
+  216  ls
+  217  mkdir backup2
+  218  ls
+  219  cd backup
+  220  mv trybe_backup.txt ../unix_tests
+  221  ls
+  222  cd ..
+  223  ls
+  224  cd backup
+  225  ls
+  226  cd ..
+  227  cd backup2
+  228  ls
+  229  cd ..
+  230  mv unix_tests trybe_backup.txt
+  231  ls
+  232  mv trybe_backup.txt backup2/
+  233  ls
+  234  cd backup2
+  235  ls
+  236  cd ..
+  237  rm backup
+  238  rmdir backup
+  239  ls
+  240  mv backup2 backup
+  241  ls
+  242  pwd
+  243  ls
+  244  rm trybe-teste.txt
+  245  ls
+  246  rmdir backup
+  247  ls
+  248  cd/backup
+  249  cd /backup
+  250  cd backup
+  251  ls
+  252  cd ..
+  253  rmdir -rf backup
+  254  rm -rf backup
+  255  ls
+  256  clear
+  257  touch skills.txt
+  258  ls
+  259  bat > skills.txt
+  260  cat > skills.txt
+  261  cat skills.txt
+  262  ls
+  263  head -5 skills.txt
+  264  tail -n 4 skills.txt
+  265  touch skills2.txt
+  266  ls
+  267  rm *.txt
+  268  ls
+  269  history
+  270  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  271  cat countries.txt 
+  272  less countries.txt 
+  273  grep -i 'brazil' countries.txt 
+  274  ls
+  275  touch phrases.txt
+  276  ls
+  277  cat > phrases.txt
+  278  grep -ic 'brazil' countries.txt 
+  279  grep -iv 'fox' countries.txt 
+  280  grep -iv 'fox' phrases.txt 
+  281  wc phrases.txt
+  282  wc -w phrases.txt 
+  283  wc -l phrases.txt 
+  284  ls
+  285  touch empty.tbt
+  286  ls
+  287  empty.pdf
+  288  ls
+  289  man touch
+  290  ls
+  291  man ls
+  292  ls .txt
+  293  ls
+  294  man ls
+  295  history
+  296  history | tail -n 295 > meus_comandos.txt
+  297  ls
+  298  cd /
+  299  cd home
+  300  ls
+  301  cd rafaelrocha
+  302  cd home
+  303  cd /
+  304  cd home
+  305  ls
+  306  cd /rafaelrocha
+  307  sudo gedit /etc/pulse/default.pa
+  308  cd /
+  309  cd home
+  310  ls
+  311  cd rafaelrocha
+  312  cd /
+  313  cd home
+  314  ls
+  315  rafaelrocha
+  316  ls
+  317  cd rafaelrocha
+  318  ls
+  319  cd trybeexercicios
+  320  ls
+  321  cat README.md
+  322  cd / modulos
+  323  ls
+  324  cd / Módulos
+  325  ls
+  326  cd / modulos
+  327  cd modulos
+  328  ls
+  329  cd 1 - fundamentos
+  330  cd 1-fundamentos
+  331  ls
+  332  cd '1 - Fundamentos'
+  333  ls
+  334  mkdir Soft Skills
+  335  ls
+  336  cd Soft Skills
+  337  clear
+  338  ls
+  339  mkfir SoftSkills
+  340  mkdir SoftSkills
+  341  ls
+  342  cd SoftSkills
+  343  touch SoftSkills.txt
+  344  ls
+  345  cat > SoftSkills.txt
+  346  ls
+  347  cat SoftSkills
+  348  cat SoftSkills.txt
+  349  history
+  350  clear
+  351  cd unix_tests/
+  352  history
+  353  history | head -4 | cat > history.txt
+  354  ls
+  355  cat history.txt 
+  356  clear
+  357  ls
+  358  cat cores.txt | sort >> history.txt 
+  359  ls
+  360  cat history.txt 
+  361  cat history.txt | sort historyorg.txt
+  362  clear
+  363  find .
+  364  ls
+  365  cat skills2.txt 
+  366  echo | sort skills2.txt 
+  367  history
+  368  cat skills2.txt >> topskills.txt | head -3
+  369  ls
+  370  cat topskills.txt 
+  371  rm topskills.txt 
+  372  cat skills2.txt >> topskills.txt | sort head -3
+  373  cat skills.txt >> topskills.txt | sort head
+  374  cat skills.txt >> topskills.txt | sort
+  375  cat skills2.txt >> topskills.txt | sort
+  376  ls
+  377  cat topskills.txt 
+  378  ll
+  379  cat tudo.txt > phrases.txt > tudophra.txt
+  380  ls
+  381  cat tudophra.txt 
+  382  rm tudophra.txt 
+  383  cat tudo.txt >> phrases.txt >> tudophra.txt
+  384  ls
+  385  cat tudophra.txt 
+  386  rm tudophra.txt 
+  387  ll
+  388  cat topskills.txt 
+  389  rm topskills.txt 
+  390  cat skills2.txt > sort topskills.txt 
+  391  cat skills2.txt >  topskills.txt 
+  392  sort topskills.txt 
+  393  sort >> topskills.txt 
+  394  l
+  395  ll
+  396  cat topskills.txt 
+  397  sort > topskills.txt 
+  398  cat topskills.txt 
+  399  rm topskills.txt 
+  400  ls
+  401  cat skills2.txt > topskills.txt
+  402  sort topskills.txt 
+  403  cat topskills.txt 
+  404  sort | head -3 topskills.txt 
+  405  sort  head -3 topskills.txt 
+  406  sort topskills.txt | head -3 topskills.txt 
+  407  sort topskills.txt | head -3
+  408  sort topskills.txt | head -3 | cat topskills.txt 
+  409  sort topskills.txt | head -3
+  410  cat topskills.txt 
+  411  touch phrases2.txt
+  412  cat > phrases2.txt 
+  413  echo phrases2.txt 
+  414  cat >> phrases2.txt 
+  415  cat phrases2.txt 
+  416  cat > phrases2.txt > countries.txt > bunch_of_things.txt  
+  417  ls
+  418  cat bunch_of_things.txt 
+  419  rm bunch_of_things.txt 
+  420  cat > phrases2.txt > countries.txt > bunch_of_things.txt
+  421  ls
+  422  cat bunch_of_things.txt 
+  423  rm bunch_of_things.txt 
+  424  cat >> phrases2.txt >> countries.txt >> bunch_of_things.txt
+  425  cat bunch_of_things.txt 
+  426  cat  phrases2.txt > countries.txt > bunch_of_things.txt
+  427  cat bunch_of_things.txt 
+  428  ls
+  429  cat bunch_of_things.txt 
+  430  cat phrases2.txt 
+  431  cat countries.txt 
+  432  cat > phrases2.txt 
+  433  cd..
+  434  cd ..
+  435  ps
+  436  cd /
+  437  ps
+  438  cd ..
+  439  cd rafaelrocha
+  440  cd ..
+  441  clear
+  442  cd unix_tests/
+  443  ll
+  444  cat countries.txt 
+  445  cat > countries.txt 
+  446  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  447  ls
+  448  rm bunch_of_things.txt 
+  449  cat countries.txt 
+  450  cat phrases2.txt > countries.txt > bunch_of_things.txt
+  451  cat bunch_of_things.txt 
+  452  rm countries.txt 
+  453  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  454  rm bunch_of_things.txt 
+  455  cat phrases2.txt > countries.txt > bunch_of_things.txt
+  456  cat bunch_of_things.txt 
+  457  cat phrases2.txt  countries.txt > bunch_of_things.txt
+  458  cat bunch_of_things.txt 
+  459  rm bunch_of_things.txt 
+  460  cat phrases2.txt countries.txt > bunch_of_things.txt
+  461  cat bunch_of_things.txt 
+  462  ls
+  463  rm skills2.txt 
+  464  rm topskills.txt 
+  465  rm bunch_of_things.txt 
+  466  rm sort
+  467  clear
+  468  cat > skills.txt
+  469  cat >> skills.txt 
+  470  sort skills.txt 
+  471  ls
+  472  rm phrases2.txt 
+  473  rm skills.txt 
+  474  cat > skills2.txt
+  475  cat >> skills2.txt 
+  476  cat skills2.txt 
+  477  sort skills2.txt 
+  478  cat skills2.txt 
+  479  sort skills2.txt 
+  480  sort < skills2.txt 
+  481  sort < skills2.txt > topskills.txt
+  482  cat topskills.txt 
+  483  cat > phrases2.txt
+  484  cat phrases2.txt | wc -l
+  485  cat >> phrases2.txt 
+  486  cat phrases2.txt countries.txt > bunch_of_things.txt
+  487  cat bunch_of_things.txt 
+  488  cat countries.txt 
+  489  rm countries.txt 
+  490  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  491  cat countries.txt 
+  492  cat phrases2.txt countries.txt > bunch_of_things.txt
+  493  cat bunch_of_things.txt 
+  494  rm bunch_of_things.txt 
+  495  cat phrases2.txt countries.txt > bunch_of_things.txt
+  496  cat bunch_of_things.txt 
+  497  sort bunch_of_things.txt 
+  498  ll
+  499  ls -l
+  500  chmod u+w bunch_of_things.txt 
+  501  ls -l
+  502  chmod g+w bunch_of_things.txt 
+  503  ls -l
+  504  chmod 644
+  505  chmod 644 bunch_of_things.txt 
+  506  ls -l
+  507  chmod a+w bunch_of_things.txt 
+  508  ls -l
+  509  chmod a-w bunch_of_things.txt
+  510  ls -l
+  511  chmod 644 bunch_of_things.txt 
+  512  jobs
+  513  cd ..
+  514  jobs
+  515  cd /
+  516  jobns
+  517  jobs
+  518  clear
+  519  cd rafaelrocha
+  520  cd ..
+  521  ps
+  522  sleep 30 &
+  523  ps
+  524  sleep 30 &
+  525  ps
+  526  sleep 30 
+  527  bg
+  528  sleep 30 
+  529  bg
+  530  jobs
+  531  kill %1
+  532  ps
+  533  jobs
+  534  sleep 100
+  535  bg
+  536  ps
+  537  kill 24556
+  538  ps
+  539  jobs
+  540  clear
+  541  sudo apt-get install cmatrix
+  542  cmatrix
+  543  sudo apt-get install fortune
+  544  fortune
+  545  fortune > fortune.txt
+  546  ls
+  547  cat fortune.txt 
+  548  wc fortune.txt 
+  549  sudo apt-get install sl
+  550  sl
+  551  sl -F
+  552  sudo apt-get install cowsay
+  553  cowsay hi
+  554  cowsay fortune.txt 
+  555  cowsay | cat fortune.txt 
+  556  telnet towel.blinkenlights.nl
+  557  cd unix_tests/
+  558  ls
+  559  rm -3
+  560  rm bunch_of_things.txt 
+  561  rm cores.txt 
+  562  rm history.txt 
+  563  rm skills2.txt 
+  564  rm phrases2.txt 
+  565  rm topskills.txt 
+  566  rm tudo.txt 
+  567  clear
+  568  cat > skills2.txt
+  569  cat >> skills2.txt 
+  570  cat skills2.txt 
+  571  sort skills2.txt 
+  572  wc -l skills2.txt 
+  573  head -3 skills2.txt | sort | cat > top_skills.txt
+  574  ll
+  575  cat top_skills.txt
+  576  cat > phrases2.txt
+  577  cat >> phrases2.txt 
+  578  cat countries.txt 
+  579  cat phrases2.txt countries.txt > bunch_of_things
+  580  sort bunch_of_things 
+  581  clear
+  582  ls -l
+  583  chmod a+w bunch_of_things 
+  584  ls -l
+  585  chmod a-w bunch_of_things 
+  586  ls-l
+  587  ls -l
+  588  chmod 644 bunch_of_things 
+  589  ls -l
+  590  ps
+  591  sleep 30 &
+  592  ps
+  593  kill 29617
+  594  ps
+  595  sleep 30
+  596  bg
+  597  sleep 30
+  598  bg
+  599  sleep 300
+  600  bg
+  601  sleep 100
+  602  jobs
+  603  kill [2]
+  604  ps
+  605  kill 29715
+  606  kill 29742
+  607  ps
+  608  jobs
+  609  kill 29742
+  610  ps
+  611  history 
+  612  history | tail -n 611 >meuscomandosdia1.4.txt

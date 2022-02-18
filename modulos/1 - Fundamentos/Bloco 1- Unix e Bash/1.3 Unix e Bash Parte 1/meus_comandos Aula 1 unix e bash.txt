@@ -1,0 +1,295 @@
+    2  clean
+    3  sudo add-apt-repository ppa:graphics-drivers/ppa
+    4  sudo add-apt-repository ppa:noobslab/icons -y
+    5  sudo apt install papirus-icon-theme -y
+    6  sudo apt install nemo-fileroller -y
+    7  sudo apt install plank -y
+    8  sudo apt install ./zoom_amd64.deb
+    9  su -  
+   10  sudo update-alternatives --config x-www-browser
+   11  sudo su
+   12  xfce4-settings-manager
+   13  su udo
+   14  sdo
+   15  sudo
+   16  sudo su
+   17  sudo update-alternatives --config x-www-browser
+   18  sudo
+   19  update-alternatives --install /usr/bin/x-www-browser x-www-browser sistema_de_arquivos/snap/opera/current/usr/share/applications 0
+   20  update-alternatives --install /usr/bin/x-www-browser x-www-snap/opera/current/usr/share/applications 0
+   21  chmod +x micclient-x86_64.AppImage
+   22  sudo insmod wo_snd_capture-x86.ko
+   23  cd /home/rafaelrocha/Downloads
+   24  chmod a+x micclient-ubuntu-x86
+   25  chmod a+x micclient-ubuntu-x86_64
+   26  chmod a+x micclient-ubuntu-x86_x64
+   27  chmod a+x micclient-ubuntu-x86_64
+   28  chmod a+x micclient-x86_64
+   29  chmod a+x micclient-xubuntu-x86_64
+   30  chmod a+x micclient-ubuntu-x86_64
+   31  chmod a+x micclient-ubuntu-x86_x64
+   32  chmod a+x micclient-xubuntu-x86_x64
+   33  cd/home/rafaelrocha/Downloads
+   34  cd /home/rafaelrocha/Downloads
+   35  chmod a+x micclient-x86_64
+   36  chmod a+x micclient-x86_x64
+   37  cd /home/rafaelrocha/Downloads
+   38  chmod +x micclient-x86_64.AppImage
+   39  sudo modprobe snd-aloop
+   40  cd /home/rafaelrocha/Downloads
+   41  /micclient-x86_64.AppImage -t Wifi 192.168.100.2
+   42  ./micclient-x86_64.AppImage -t Wifi 192.168.100.2
+   43  sudo dnf install linux-headers-`uname -r`
+   44  cd /tmp/
+   45  wget -O droidcam_latest.zip https://files.dev47apps.net/linux/droidcam_1.8.0.zip
+   46  # sha1sum: 3f94d6ec57a191ad146392fcf094b205e375e1ef
+   47  unzip droidcam_latest.zip -d droidcam
+   48  sudo ./install-client
+   49  sudo rm -Rf /opt/droidcam*
+   50  sudo apt install gcc make adb usbmuxd linux-headers-`uname -r`
+   51  cd /tmp/
+   52  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+   53  unzip droidcam_latest.zip -d droidcam && cd droidcam
+   54  sudo ./install-client
+   55  sudo ./install-video
+   56  sudo ./install-sound
+   57  sudo apt install menulibre
+   58  cd droidcam*/
+   59  sudo /opt/droidcam-uninstall
+   60  sudo rm -Rf /opt/droidcam*
+   61  sudo rm -Rf /usr/bin/droidcam
+   62  sudo rm -Rf /usr/share/applications/droidcam.desktop
+   63  sudo apt-get install linux-headers-`uname -r`
+   64  wget https://www.dev47apps.com/files/600/droidcam-64bit.tar.bz2 -O droidcam.tar.bz2
+   65  sudo tar -xjvf droidcam.tar.bz2
+   66  cd droidcam*/
+   67  cd droidcam/
+   68  cd /home/rafaelrocha/droidcam
+   69  sudo ./install
+   70  cd /tmp/
+   71  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+   72  unzip droidcam_latest.zip -d droidcam && cd droidcam
+   73  sudo ./install-client
+   74  sudo ./install-video
+   75  sudo ./install-sound
+   76  sudo apt install pavucontrol 
+   77  pavucontrol
+   78  pactl load-module module-echo-cancel aec_method=webrtc sink_properties=device.description="Noise_Reduction" aec_args="analog_gain_control=0\ digital_gain_control=0"
+   79  pactl list short sources
+   80  pactl set-default-sink 'alsa_input.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.mono-fallback'
+   81  pactl set-default-sink 'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo.monitor'
+   82  pactl set-default-sink <'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo.monitormodule-alsa-card.c'>
+   83  pactl set-default-sink <'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo.monitor'>
+   84  pacmd list-cards
+   85  pacmd set-card-profile 0 output:analog-stereo
+   86  /etc/pulse/default.pa
+   87  pactl list short sinks 
+   88  set-default-sink 'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo'
+   89  set-default-sink <'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo'>
+   90  set-default-sink 'alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo'
+   91  Sudo -H gedit /etc/Pulse/default.pa
+   92  sudo -H gedit /etc/Pulse/default.pa
+   93  lsb_release -rcs
+   94  sudo add-apt-repository ppa:nilarimogard/webupd8
+   95  sudo apt-get update
+   96  sudo apt-get install pulseaudio-equalizer
+   97  sudo apt-get remove pulseaudio-equalizer --auto-remove
+   98  wget https://launchpad.net/~mikhailnov/+archive/ubuntu/pulseeffects/+files/pulseeffects_4.1.2-2~bionic1_amd64.deb -O pulseeffects.deb
+   99  wget  https://launchpad.net/~yunnxx/+archive/ubuntu/gnome3/+files/pulseeffects_1.312entornosgnulinuzesty-1ubuntu1_amd64.deb -O pulseeffects.deb
+  100  sudo dpkg -i pulseeffects.deb
+  101  sudo apt-get install -f
+  102  sudo gedit /etc/pulse/default.pa 
+  103  sudo apt-get install gedit
+  104  sudo gedit /etc/pulse/default.pa
+  105  pulseaudio -k
+  106  sudo gedit /etc/pulse/default.pa
+  107  pulseaudio -k
+  108  sudo gedit /etc/pulse/default.pa
+  109  pulseaudio -k
+  110  sudo rm -Rf /opt/droidcam*
+  111  sudo rm -Rf /usr/bin/droidcam
+  112  sudo rm -Rf /usr/share/applications/droidcam.desktop
+  113  sudo apt-get install linux-headers-`uname -r`
+  114  sudo /opt/droidcam-uninstall
+  115  sudo apt install gcc make adb usbmuxd linux-headers-`uname -r`
+  116  cd /tmp/
+  117  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+  118  unzip droidcam_latest.zip -d droidcam && cd droidcam
+  119  sudo ./install-client
+  120  sudo ./install-video
+  121  sudo /opt/droidcam-uninstall
+  122  sudo apt install gcc make adb usbmuxd linux-headers-`uname -r`
+  123  cd /tmp/
+  124  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+  125  unzip droidcam_latest.zip -d droidcam && cd droidcam
+  126  sudo ./install-client
+  127  sudo ./install-video
+  128  sudo ./install-sound
+  129  sudo apt install curl
+  130  tail ~/.bashrc
+  131  source ~/.bashrc
+  132  nvm
+  133  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+  134  ~/.nvm
+  135  nvm
+  136  command -v nvm
+  137  nvm
+  138  nvm install lts/*
+  139  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+  140  tail ~/.bashrc
+  141  nvm
+  142  source ~/.bashrc
+  143  nvm install 14
+  144  nvm use 14
+  145  node -v
+  146  sudo apt-get install hddtemp lm-sensors
+  147  sudo sensors-detect
+  148  sudo service module-init-tools começar
+  149  sudo apt-get install psensor
+  150  sudo /opt/droidcam-uninstall
+  151  sudo apt install gcc make adb usbmuxd linux-headers-`uname -r`
+  152  cd /tmp/
+  153  wget https://files.dev47apps.net/linux/droidcam_latest.zip
+  154  unzip droidcam_latest.zip -d droidcam && cd droidcam
+  155  sudo ./install-client
+  156  sudo ./install-sound
+  157  sudo ./install-video
+  158  sudo apt-get update
+  159  sudo apt-get install git
+  160  git --version
+  161  git config --global user.name "Rafael Rocha"
+  162  git config --global usar.email "1rafaelrocha2@gmail.com"
+  163  cd /
+  164  cd/
+  165  cd /
+  166  ls
+  167  ls -a
+  168  ls
+  169  cd users
+  170  cd usr
+  171  ls
+  172  clear
+  173  ls
+  174  cd games
+  175  mkdir gametrybe
+  176  ls
+  177  cd usr
+  178  cd ..
+  179  ls
+  180  mkdir music
+  181  cd ..
+  182  cd home
+  183  ls
+  184  pwd
+  185  ls
+  186  cd Música
+  187  ls
+  188  mkdir music
+  189  ls
+  190  clear
+  191  cd /
+  192  ls
+  193  cd home
+  194  mkdir unix_tests
+  195  ls
+  196  cd rafaelrocha
+  197  mkdir unix_tests
+  198  cd unix_tests
+  199  mk trybe.txt
+  200  cat trybe.txt
+  201  touch trybe.txt
+  202  ls
+  203  cp trybe.txt trybe_backup.txt
+  204  ls
+  205  mv trybe.txt trybe-teste.txt
+  206  ls
+  207  mkdir backup
+  208  ls
+  209  mv trybe_backup.txt /backup
+  210  ls
+  211  mv trybe_backup.txt backup/
+  212  ls
+  213  cd backup
+  214  ls
+  215  cd ..
+  216  ls
+  217  mkdir backup2
+  218  ls
+  219  cd backup
+  220  mv trybe_backup.txt ../unix_tests
+  221  ls
+  222  cd ..
+  223  ls
+  224  cd backup
+  225  ls
+  226  cd ..
+  227  cd backup2
+  228  ls
+  229  cd ..
+  230  mv unix_tests trybe_backup.txt
+  231  ls
+  232  mv trybe_backup.txt backup2/
+  233  ls
+  234  cd backup2
+  235  ls
+  236  cd ..
+  237  rm backup
+  238  rmdir backup
+  239  ls
+  240  mv backup2 backup
+  241  ls
+  242  pwd
+  243  ls
+  244  rm trybe-teste.txt
+  245  ls
+  246  rmdir backup
+  247  ls
+  248  cd/backup
+  249  cd /backup
+  250  cd backup
+  251  ls
+  252  cd ..
+  253  rmdir -rf backup
+  254  rm -rf backup
+  255  ls
+  256  clear
+  257  touch skills.txt
+  258  ls
+  259  bat > skills.txt
+  260  cat > skills.txt
+  261  cat skills.txt
+  262  ls
+  263  head -5 skills.txt
+  264  tail -n 4 skills.txt
+  265  touch skills2.txt
+  266  ls
+  267  rm *.txt
+  268  ls
+  269  history
+  270  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  271  cat countries.txt 
+  272  less countries.txt 
+  273  grep -i 'brazil' countries.txt 
+  274  ls
+  275  touch phrases.txt
+  276  ls
+  277  cat > phrases.txt
+  278  grep -ic 'brazil' countries.txt 
+  279  grep -iv 'fox' countries.txt 
+  280  grep -iv 'fox' phrases.txt 
+  281  wc phrases.txt
+  282  wc -w phrases.txt 
+  283  wc -l phrases.txt 
+  284  ls
+  285  touch empty.tbt
+  286  ls
+  287  empty.pdf
+  288  ls
+  289  man touch
+  290  ls
+  291  man ls
+  292  ls .txt
+  293  ls
+  294  man ls
+  295  history
+  296  history | tail -n 295 > meus_comandos.txt
