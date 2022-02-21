@@ -73,7 +73,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript Assâncrono e Callbacks_
+- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Promises_
 - [ ] 9-3: _[Projeto - Carrinho de Compras]()_
 
@@ -107,7 +107,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 14: Metodologias Ãgeis
 
-- [ ] 14-1: _Metodologias Ãgeis_
+- [ ] 14-1: _Metodologias Ágeis_
 - [ ] 14-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 15: Testes em React
@@ -118,7 +118,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 16: Introdução ao Redux
 
-- [ ] 16-1: _IntroduÃ§Ã£o ao Redux_
+- [ ] 16-1: _Introdução ao Redux_
 - [ ] 16-2: _React com Redux - Parte 1_
 - [ ] 16-3: _React com Redux - Prática_
 - [ ] 16-4: _React com Redux - Parte 2_
@@ -146,7 +146,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 20-1: _Banco de dados SQL_
 - [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma especÃ­fica_
+- [ ] 20-3: _Filtrando dados de forma específica_
 - [ ] 20-4: _Manipulando tabelas_
 - [ ] 20-5: _[Projeto - All For One]()_
 
@@ -160,7 +160,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 22: Bancos de dados relacionais
 
 - [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _NormalizaÃ§Ã£o, Formas Normais e Dumps_
+- [ ] 22-2: _Normalização, Formas Normais e Dumps_
 - [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
 - [ ] 22-3: _[Projeto - One For All]()_
 
@@ -186,7 +186,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 26: Intro - NodeJS
 
 - [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo AssÃ­ncrono_
+- [ ] 26-2: _NodeJS - Fluxo Assí­ncrono_
 - [ ] 26-3: _NodeJS - Arquitetura_
 - [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
 
@@ -198,7 +198,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 28: NodeJS
 
-- [ ] 28-1: _Arquitetura de Software - Camada de ServiÃ§o_
+- [ ] 28-1: _Arquitetura de Software - Camada de Serviço_
 - [ ] 28-2: _Arquitetura web - Rest e Restful_
 - [ ] 28-3: _[Projeto - Store Manager]()_
 
@@ -236,7 +236,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 34-1: _[Projeto - Trybeer V2]()_
 
-## CiÃªncia da ComputaÃ§Ã£o :hourglass_flowing_sand:
+## Ciência da Computação :hourglass_flowing_sand:
 
 ##### Bloco 35: Introdução - Ciência da Computação
 
@@ -248,7 +248,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 36: Python
 
 - [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e ExceÃ§Ãµes_
+- [ ] 35-2: _Testes e Exceções_
 - [ ] 35-3: _Entrada e Saí­da de dados_
 - [ ] 36-4: _Entrada e Saída de dados_
 - [ ] 35-5: _[Projeto - Tech news]()_
