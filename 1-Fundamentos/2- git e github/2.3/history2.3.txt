@@ -1,0 +1,68 @@
+    2  git status
+    3  cd 1-Fundamentos
+    4  cd 2-\ git\ e\ github
+    5  cd 2.3
+    6  ls
+    7  git branch trybe-skills-changes
+    8  git checkout trybe-skills-changes
+    9  cat > trybe-skills.txt
+   10  cat trybe-skills.txt
+   11  git add trybe-skills.txt
+   12  git commit -m "trybeskills"
+   13  git push -u origin trybe-skills-changes
+   14  git checkout master
+   15  git branch
+   16  cd ..
+   17  cd..
+   18  cd ..
+   19  git branch trybe-skills-update
+   20  git checkout trybe-skills-update
+   21  cd 1-Fundamentos
+   22  cd 2
+   23  cd 2-\ git\ e\ github
+   24  cd 2.3
+   25  ls
+   26  git checkout trybeskills
+   27  ls
+   28  cd ..
+   29  git checkout master
+   30  cd ..
+   31  git branch
+   32  git branch -d trybe-skills-changes
+   33  git branch -d trybe-skills-update
+   34  git status
+   35  cd 1-Fundamentos
+   36  cd 2-\ git\ e\ github
+   37  cd 2.3
+   38  cat > trybe-skills.txt
+   39  ls
+   40  git status
+   41  git add .
+   42  git commit -m "update"
+   43  git push -u origin master
+   44  git branch trybe-skills-changes
+   45  git checkout trybe-skills-changes
+   46  ls
+   47  cat >> trybe-skills.txt
+   48  cat trybe-skills.txt
+   49  git add trybe-skills.txt
+   50  git commit -m "updatetrybeskills"
+   51  git push -u origin trybe-skills-changes
+   52  git checkout master
+   53  git branch trybe-skills-update
+   54  git checkout trybe-skills-update
+   55  ls
+   56  cat >> trybe-skills.txt
+   57  cat trybe-skills.txt
+   58  git add trybe-skills.txt
+   59  git commit -m "updatetrybe"
+   60  git push -u origin trybe-skills-update
+   61  git checkout master
+   62  cd ..
+   63  git branch
+   64  git branch -d trybe-skills-update
+   65  git branch
+   66  git -d trybe-skills-changes
+   67  git branch -d trybe-skills-changes
+   68  git branch
+   69  history 
