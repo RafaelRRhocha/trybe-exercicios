@@ -12,3 +12,12 @@ body {
     font-family: League Spartan, sans-serif;
     font-size: 1.3em;
 }
+
+aside {
+    width: 30%;
+    padding-left: 10px;
+    margin-left: 10px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
