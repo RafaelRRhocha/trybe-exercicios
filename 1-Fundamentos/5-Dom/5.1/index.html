@@ -43,13 +43,42 @@
       </section>
     </main>
     <script>
-        document.getElementsByTagName('p')[0].innerText = "escrever aqui como voce vai ser";
-        document.getElementsByTagName('p')[1].innerText = "daqui a ";
-        document.getElementsByTagName('p')[2].innerText = "2 anos ";
-        document.getElementsByTagName('h1')[0].innerText = "Exercício 5.1 - JavaScript"
+      let textCorrections = () => {
+        document.getElementsByTagName("p")[0].innerText =
+          "escrever aqui como voce vai ser";
+        document.getElementsByTagName("p")[1].innerText = "daqui a ";
+        document.getElementsByTagName("p")[2].innerText = "2 anos ";
 
-        const mudarACor = document.getElementsByClassName('main-content')[0];
-        mudarACor.style.backgroundColor = 'rgb(76,164,109)';
+        document.getElementsByTagName("h1")[0].innerText =
+          "Exercício 5.1 - JavaScript";
+      };
+
+      let color = () => {
+        const mudarACor = document.getElementsByClassName("main-content")[0];
+        mudarACor.style.backgroundColor = "rgb(76,164,109)";
+
+        const mudaACor = document.querySelectorAll(".center-content")[0];
+        mudaACor.style.backgroundColor = "white";
+      };
+
+      let upperP = () => {
+        const upper = document.querySelectorAll("p");
+        for (let i = 0; i < upper.length; i += 1) {
+          upper[i].style.textTransform = "uppercase";
+        }
+      };
+
+      let consol = () => {
+        const logar = document.querySelectorAll("p");
+        for (let i = 0; i < logar.length; i += 1) {
+          return logar[i];
+        }
+      };
+
+      upperP();
+      color();
+      textCorrections();
+      console.log(consol().innerText);
 
       /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
