@@ -28,13 +28,19 @@
   }
   
   #days li {
-    color: #777;
+    color: 	#1C1C1C;
     display: inline-block;
     font-size:20px;
     margin: 5px 0;
     text-align: center;
     vertical-align: middle;
     width: 13.6%;
+    transition: all 0.3s;
+  }
+
+  #days li:hover {
+    transform: scale(1.15);
+    color: green;
   }
   
   .input-container {
@@ -56,8 +62,8 @@
   }
   
   .month-container {
-    background: green;
-    padding: 40px 25px;
+    background: #66CDAA;
+    padding: 40px 0;
     text-align: center;
   }
   
@@ -141,11 +147,15 @@
   }
   
   .week-days li {
-    color: #666;
+    color: black;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
     width: 13.6%;
+  }
+
+  .week-days li:hover {
+    transform: scale(1.05);
   }
   
   .week-days {
@@ -153,3 +163,4 @@
     margin: 0px;
     padding: 10px 0;
   }
+  

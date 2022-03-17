@@ -26,8 +26,8 @@ function createMonthsList() {
     20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
   ];
 
+  //For para criar a lista com os dias.
   const idText = document.querySelector("#days");
-
   for (let i = 0; i < dezDaysList.length; i += 1) {
     let dias = dezDaysList[i];
 
@@ -38,6 +38,7 @@ function createMonthsList() {
     idText.appendChild(listaDias);
 
   }
+    //for para criar os feriados
     const feriados = [24, 25, 31];
     for (let f = 0; f < feriados.length; f+=1) {
       let diasFeriados = feriados[f];
@@ -51,6 +52,7 @@ function createMonthsList() {
       idText.appendChild(diasFeriadosLista);
   }
 
+  //for para criar sexta-feira
   const sextaFeira = [4, 11, 18, 25];
   for (let s = 0; s < sextaFeira.length; s+=1) {
     let diasSextaFeira = sextaFeira[s];
@@ -65,7 +67,7 @@ function createMonthsList() {
 }
 }
 
-//02
+//02-03
 function createButton (feriados){
   const pegarClasse = document.querySelector('.buttons-container');
 
@@ -77,11 +79,36 @@ function createButton (feriados){
 
   button.addEventListener('click', () => {
     const classeDays = document.querySelectorAll('.holiday');
-    // classeDays.style.backgroundColor('red');
-    console.log(classeDays);
+    for (c = 0; c < classeDays.length; c+=1) {
+      const classeDaysLista = classeDays[c];
+      console.log(classeDaysLista);
+    }
   })
+}
+
+//04
+function createButtonFriday (Sextafeira) {
+  const pegarClasseSexta = document.querySelector('.buttons-container');
+
+  const buttonSexta = document.createElement('button');
+  buttonSexta.innerText = 'Sexta-Feira';
+  buttonSexta.id = 'btn-friday';
+
+  pegarClasseSexta.appendChild(buttonSexta);
+
+  buttonSexta.addEventListener('click', () => {
+    const classeDaysSexta = document.querySelectorAll('.friday');
+    for (s = 0; s < classeDaysSexta.length; s+=1) {
+      const classeDaysListaSexta = classeDaysSexta[s];
+      console.log(classeDaysListaSexta);
+    }
+  })
+
+
+
 }
 
 createDaysOfTheWeek();
 createMonthsList();
 createButton();
+createButtonFriday();
