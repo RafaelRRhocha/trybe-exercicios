@@ -46,6 +46,12 @@ function createButton (feriados){
 
   pegarClasse.appendChild(button);
 
+  button.addEventListener('click', () => {
+    const classeDays = document.querySelectorAll('.day');
+    console.log(classeDays);
+  })
+  
+
 }
 
 createDaysOfTheWeek();
