@@ -35,13 +35,12 @@ function createMonthsList() {
 
     idText.appendChild(listaDias);
 
-    const found = dezDaysList.indexOf(24, 25, 31);
-    console.log(found);
 
-    if (found === 25){
+
+    if (listaDias === 24){
       listaDias.classList = 'holiday';
-      console.log(listaDias);
     }
+    console.log(listaDias);
     // else if (listaDias === 4, 11, 18, 25) {
     //   listaDias.classList = "friday";
     // }
