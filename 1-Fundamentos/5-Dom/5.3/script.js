@@ -77,7 +77,7 @@ function createButton (feriados){
 
   button.addEventListener('click', () => {
     const classeDays = document.querySelectorAll('.holiday');
-    classeDays.style.backgroundColor('red');
+    // classeDays.style.backgroundColor('red');
     console.log(classeDays);
   })
 }
