@@ -34,19 +34,20 @@ function createMonthsList() {
     listaDias.classList = "day";
 
     idText.appendChild(listaDias);
-
-
-
-    if (listaDias === 24){
-      listaDias.classList = 'holiday';
-    }
-    console.log(listaDias);
-    // else if (listaDias === 4, 11, 18, 25) {
-    //   listaDias.classList = "friday";
-    // }
-    // console.log(listaDias);
   }
+}
+
+function createButton (feriados){
+  const pegarClasse = document.querySelector('.buttons-container');
+
+  const button = document.createElement('button');
+  button.innerText = 'Feriados';
+  button.id = 'btn-holiday';
+
+  pegarClasse.appendChild(button);
+
 }
 
 createDaysOfTheWeek();
 createMonthsList();
+createButton();
