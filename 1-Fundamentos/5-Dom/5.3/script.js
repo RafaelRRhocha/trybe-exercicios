@@ -85,10 +85,14 @@ function createButton (feriados){
 
       let corInicial = 'rgb(238,238,238)';
       let corNova = 'green';
+      let fonteColor = 'black';
+      let fonteColorNova = 'white';
         if (classeDays[c].style.backgroundColor === corNova) {
           classeDays[c].style.backgroundColor = corInicial;
+          classeDays[c].style.color = fonteColor;
           } else {
           classeDays[c].style.backgroundColor = corNova;
+          classeDays[c].style.color = fonteColorNova;
     }
     }
   })
