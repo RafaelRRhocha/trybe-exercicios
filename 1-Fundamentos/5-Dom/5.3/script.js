@@ -38,6 +38,7 @@ function createMonthsList() {
     idText.appendChild(listaDias);
 
   }
+  // idText.sort();
     //for para criar os feriados
     const feriados = [24, 25, 31];
     for (let f = 0; f < feriados.length; f+=1) {
@@ -81,7 +82,14 @@ function createButton (feriados){
     const classeDays = document.querySelectorAll('.holiday');
     for (c = 0; c < classeDays.length; c+=1) {
       const classeDaysLista = classeDays[c];
-      console.log(classeDaysLista);
+
+      let corInicial = 'rgb(238,238,238)';
+      let corNova = 'green';
+        if (classeDays[c].style.backgroundColor === corNova) {
+          classeDays[c].style.backgroundColor = corInicial;
+          } else {
+          classeDays[c].style.backgroundColor = corNova;
+    }
     }
   })
 }
@@ -98,14 +106,19 @@ function createButtonFriday (Sextafeira) {
 
   buttonSexta.addEventListener('click', () => {
     const classeDaysSexta = document.querySelectorAll('.friday');
-    for (s = 0; s < classeDaysSexta.length; s+=1) {
+    for (let s = 0; s < classeDaysSexta.length; s+=1) {
       const classeDaysListaSexta = classeDaysSexta[s];
-      console.log(classeDaysListaSexta);
+      classeDaysListaSexta.innerText = 'SEXTOU!'
     }
   })
 
-
-
+  buttonSexta.addEventListener('dblclick', () => {
+    const classeDaysSexta = document.querySelectorAll('.friday');
+    for (let s = 0; s < classeDaysSexta.length; s+=1) {
+      const classeDaysListaSexta = classeDaysSexta[s];
+      classeDaysListaSexta.remove('SEXTOU!');
+    };
+  });
 }
 
 createDaysOfTheWeek();
