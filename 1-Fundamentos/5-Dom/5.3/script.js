@@ -100,7 +100,9 @@ function createButton (feriados){
 
 //04
 function createButtonFriday (Sextafeira) {
+  const sextaFeiraDias = [4, 11, 18, 25];
   const pegarClasseSexta = document.querySelector('.buttons-container');
+  const fridays = document.getElementsByClassName('friday');
 
   const buttonSexta = document.createElement('button');
   buttonSexta.innerText = 'Sexta-Feira';
@@ -108,20 +110,59 @@ function createButtonFriday (Sextafeira) {
 
   pegarClasseSexta.appendChild(buttonSexta);
 
-  buttonSexta.addEventListener('click', () => {
-    const classeDaysSexta = document.querySelectorAll('.friday');
-    for (let s = 0; s < classeDaysSexta.length; s+=1) {
-      const classeDaysListaSexta = classeDaysSexta[s];
-      classeDaysListaSexta.innerText = 'SEXTOU!'
-    }
-  })
+  const newFridayText = 'SEXTOU!';
 
-  buttonSexta.addEventListener('dblclick', () => {
-    const classeDaysSexta = document.querySelectorAll('.friday');
-    for (let s = 0; s < classeDaysSexta.length; s+=1) {
-      const classeDaysListaSexta = classeDaysSexta[s];
-      classeDaysListaSexta.remove('SEXTOU!');
-    };
+  buttonSexta.addEventListener('click', () => {
+    for (let pgs = 0; pgs < fridays.length; pgs += 1) {
+      if (fridays[pgs].innerText !== newFridayText) {
+          fridays[pgs].innerText = newFridayText;
+      } else {
+          fridays[pgs].innerText = sextaFeiraDias[pgs];
+        }
+      }
+  });
+}
+
+//05, 06, 07, 08, 09
+function tasks(tarefas, cor) {
+  const pegarSpan = document.createElement('span');
+  pegarSpan.innerText = 'Cor de Marcação: ';
+
+  const novaClasse = document.createElement('div');
+  novaClasse.classList = 'task';
+  novaClasse.style.backgroundColor = 'SeaGreen';
+
+  const classeTarefas = document.querySelector('.my-tasks').appendChild(pegarSpan);
+  classeTarefas.appendChild(novaClasse);
+
+  const selecionarTarefa = document.querySelectorAll('.task selected');
+
+  novaClasse.addEventListener('click', (event) => {
+    if (selecionarTarefa.length === 0 ) {
+      event.target.classList = 'task selected';
+    } else {
+      event.target.classList = 'task';
+    }
+  });
+}
+
+//10
+function cor() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+  
+  days.addEventListener('click', (event) => {
+    let eventTargetColor = event.target.style.color;
+
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'black';
+    }
   });
 }
 
@@ -129,3 +170,5 @@ createDaysOfTheWeek();
 createMonthsList();
 createButton();
 createButtonFriday();
+tasks();
+cor();

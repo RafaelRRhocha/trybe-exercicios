@@ -40,7 +40,6 @@
 
   #days li:hover {
     transform: scale(1.15);
-    color: green;
   }
   
   .input-container {
@@ -95,8 +94,8 @@
   }
   
   .my-tasks div:hover {
-    height: 45px;
-    width: 45px;
+    transition: all 0.5s;
+    transform: scale(1.15);
   }
   
   .my-tasks span {
