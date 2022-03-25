@@ -41,9 +41,11 @@ header {
 
 .informacoes input[type="text"],
 input[type="email"] {
+  border: none;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   width: 80%;
+  height: 20px;
 }
-
 #text-area {
   max-width: 80%;
   max-height: 20%;
@@ -68,16 +70,17 @@ input::-webkit-calendar-picker-indicator {
   padding: 8px 25px 8px 25px;
   border-radius: 10%;
   font-family: Crete Round, sans-serif;
-  background-color: var(--principal);
+  background-color: var(--bckgr);
   border: none;
   margin-bottom: 15px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
-  color: white;
+  color: var(--principal);
   transition: all 0.3s ease;
 }
 
 .btn:hover {
   background-color: var(--secundaria);
+  color: var(--bckgr);
   cursor: pointer;
 }
 
