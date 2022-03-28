@@ -1,0 +1,80 @@
+:root {
+  --light: #fff;
+  --bkgrnHe: #363636;
+  --bkgrnM: #474554;
+  --bkgrnIM: #CDE8E8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bkgrnHe);
+  color: var(--light);
+}
+
+.header-img {
+  width: 70px;
+}
+
+a, h4, p {
+  color: var(--light);
+  padding: 5px;
+}
+
+body {
+  background-color: var(--bkgrnM);
+}
+
+p {
+  text-align: center;
+  font-weight: 420;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagens {
+  display: flex;
+  max-width: 40%;
+  margin-top: 2%;
+  text-align: center;
+  gap: 2%;
+}
+
+.gallery-img {
+  display: flex;
+  width: 160px;
+  height: 250px;
+  padding: 55px 8px;
+  background-color: var(--bkgrnIM);
+  border-radius: 10%;
+  transition: all 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 5px 5px 10px, rgba(0, 0, 0, 0.3) 5px 5px 10px;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  padding: 10px;
+}
+
+.social-img {
+  width: 30px;
+  margin-left: 10px;
+}
