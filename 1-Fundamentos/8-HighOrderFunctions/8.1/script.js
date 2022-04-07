@@ -1,6 +1,6 @@
 // 1
 
-const func = (nome) => `${nome}, gmail: ${nome.split(' ').join('_')}@trybe.com`;
+const newE = (nome) => `${nome}, gmail: ${nome.split(' ').join('_')}@trybe.com`;
 
 const newEmployees = (nome) => {
   const employees = {
@@ -10,5 +10,22 @@ const newEmployees = (nome) => {
   }
   return employees;
 };
+// console.log(newEmployees(newE));
 
-console.log(newEmployees(func));
+// 2
+const sorteio1 = (num) => Math.floor(Math.random(num) * 6) + 1;
+const sorteio2 = (num) => Math.floor(Math.random(num) * 6) + 1;
+
+const resultadoSorteio = (num) => {
+  if (num === sorteio1) {
+    return 'Parabéns você ganhou!';
+  }
+  else {
+    return 'Tente Novamente!';
+  }
+}
+console.log(resultadoSorteio(sorteio2));
+
+// 3 
+const gabarito = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const respostas = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
