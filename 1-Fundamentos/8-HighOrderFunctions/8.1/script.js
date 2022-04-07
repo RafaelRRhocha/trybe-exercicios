@@ -27,5 +27,22 @@ const resultadoSorteio = (num) => {
 console.log(resultadoSorteio(sorteio2));
 
 // 3 
-const gabarito = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
-const respostas = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const comparar = (gabarito, respostas) => {
+  if (gabarito === respostas) { return 1; }
+  if (respostas === 'N.A') { return 2; }
+  return -0.5;
+}
+
+const contadorPontos = (gabarito, respostas, resultado) => {
+let contador = 0;
+for (let index = 0; index < gabarito.length; index += 1) {
+  const resultadoReturn = resultado(gabarito[index], respostas[index]);
+  contador += resultadoReturn;
+}
+return `Resultado: ${contador} pontos`;
+};
+
+console.log(contadorPontos(RIGHT_ANSWERS, STUDENT_ANSWERS, comparar));
