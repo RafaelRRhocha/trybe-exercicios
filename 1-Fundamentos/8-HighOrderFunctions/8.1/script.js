@@ -1,6 +1,6 @@
 // 1
 
-const newE = (nome) => `${nome}, gmail: ${nome.split(' ').join('_')}@trybe.com`;
+const newE = (nome) => `${nome}, gmail: ${nome.toLowerCase().split(' ').join('_')}@trybe.com`;
 
 const newEmployees = (nome) => {
   const employees = {
@@ -10,7 +10,7 @@ const newEmployees = (nome) => {
   }
   return employees;
 };
-// console.log(newEmployees(newE));
+console.log(newEmployees(newE));
 
 // 2
 const sorteio1 = (num) => Math.floor(Math.random(num) * 6) + 1;
@@ -32,7 +32,7 @@ const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
 const comparar = (gabarito, respostas) => {
   if (gabarito === respostas) { return 1; }
-  if (respostas === 'N.A') { return 2; }
+  if (respostas === 'N.A') { return 0; }
   return -0.5;
 }
 
