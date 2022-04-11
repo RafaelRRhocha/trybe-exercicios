@@ -1,12 +1,10 @@
 // const products = ['Arroz', 'Feijão', 'Alface', 'Tomate'];
 // const prices = [2.99, 3.99, 1.5, 2];
+// let newPrices = [];
 
-// const updateProducts = (listProducts, listPrices) => listProducts.map((product, index) => (
-//   { [product]: listPrices[index] }
-// ));
+// let teste = prices.forEach((price, i) => newPrices.push(`${products[i]}: ${price}`));
+// console.log(newPrices);
 
-// const listProducts = updateProducts(products, prices);
-// console.log(listProducts);
 
 const estudantes = [
   {
