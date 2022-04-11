@@ -14,9 +14,9 @@ const log = numbers.find(verificar15);
 console.log(log);
 
 
-const names = ['João', 'Irene', 'Fernando', 'Maria'];
+const namesJ = ['João', 'Irene', 'Fernando', 'Maria'];
 const findNameWithFiveLetters = () => {
-  return names.find((name) => name.length <= 4);
+  return namesJ.find((name) => name.length <= 4);
 }
 console.log(findNameWithFiveLetters());
 
@@ -29,4 +29,13 @@ const musicas = [
 function findMusic(id) {
   return musicas.find((musica) => musica.id === id);
 }
-console.log(findMusic('31031685'))
+console.log(findMusic('31031685'));
+
+// Some e Every
+const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+const hasName = (arr, name) => {
+  return arr.some((element) => element === name)
+}
+console.log(hasName(names, 'Ana'));
+
+
