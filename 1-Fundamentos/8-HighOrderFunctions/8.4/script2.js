@@ -67,7 +67,7 @@ console.log(livros);
 
 // 03
 const idades = books.reduce((acc, idade) => {
-  return acc += (idade.releaseYear - idade.author.birthYear) / (books.length);
+  return acc += (idade.releaseYear - idade.author.birthYear) / books.length;
 }, 0)
 console.log(idades);
 
