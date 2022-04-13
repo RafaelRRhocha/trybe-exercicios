@@ -8,5 +8,3 @@ const flatten = () =>
     return accResult;
   }, []);
 console.log(flatten());
-
-
