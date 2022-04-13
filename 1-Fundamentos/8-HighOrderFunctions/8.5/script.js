@@ -25,7 +25,7 @@
 // Eu trabalho como ${profissao}, na empresa ${empresa} - ${iniciais}`);
 
 const saudacoes = ['Olá', 'Oi'];
-const {saudacao, teste} = saudacoes;
-console.log(saudacao);
+const [saudacao, teste] = saudacoes;
+console.log(teste);
 
 // Produza o mesmo resultado acima, porém utilizando array destructuring
