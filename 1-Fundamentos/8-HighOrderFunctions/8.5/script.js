@@ -28,4 +28,7 @@ const saudacoes = ['Olá', 'Oi'];
 const [saudacao, teste] = saudacoes;
 console.log(teste);
 
-// Produza o mesmo resultado acima, porém utilizando array destructuring
+let itens = ['gato', 'água', 'arroz'];
+const [animal, bebida, comida] = itens
+
+console.log(comida, animal, bebida);
