@@ -114,8 +114,16 @@ console.log(shipLength(ships[1])); // 'Queen Mary 2 is 1132 feet long'
 console.log(shipLength(ships[2])); // 'Yamato is 256 meters long'
 
 // 08
-const greet = () => 
+const greet = (name, saud = 'Hi') => name + ' ' + saud; 
 
 console.log(greet('John')) // 'Hi John'
 console.log(greet('John', 'Good morning')) // 'Good morning John'
 console.log(greet('Isabela', 'Oi')) // 'Oi Isabela'
+
+//09
+const yearSeasons = {
+  spring: ['March', 'April', 'May'],
+  summer: ['June', 'July', 'August'],
+  autumn: ['September', 'October', 'November'],
+  winter: ['December', 'January', 'February'],
+};
