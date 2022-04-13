@@ -36,3 +36,9 @@ let numerosPares = [1, 3, 5, 6, 8, 10, 12];
 [,,, ...numerosPares] = numerosPares;
 
 console.log(numerosPares); // [6, 8, 10, 12];
+
+const getPosition = (latitude, longitude) => ({
+  latitude,
+  longitude,
+});
+console.log(getPosition(-19.8157, -43.9542));
