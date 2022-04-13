@@ -23,3 +23,9 @@
 
 // console.log(`OLá! meu nome é ${nome}, tenho ${idade} e sou ${nacionalidade}
 // Eu trabalho como ${profissao}, na empresa ${empresa} - ${iniciais}`);
+
+const saudacoes = ['Olá', 'Oi'];
+const {saudacao, teste} = saudacoes;
+console.log(saudacao);
+
+// Produza o mesmo resultado acima, porém utilizando array destructuring
