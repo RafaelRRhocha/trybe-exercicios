@@ -85,14 +85,31 @@ const palio = ['Palio', 'Fiat', 2019];
 const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
 const chiron = ['Chiron', 'Bugatti', 2016];
 
-const [Marca, Modelo, Ano] = palio;
+const toObject = ([marca, modelo, ano]) => ({marca, modelo, ano});
+console.log(toObject(palio));
 
-const toObject = (obj) => {
-  return obj = {
-    marca: Marca,
-    modelo: Modelo,
-    ano: Ano,
-  }
-}
-console.log(toObject());
+// 07
+const ships = [
+  {
+    name: 'Titanic',
+    length: 269.1,
+    measurementUnit: 'meters',
+  },
+  {
+    name: 'Queen Mary 2',
+    length: 1132,
+    measurementUnit: 'feet',
+  },
+  {
+    name: 'Yamato',
+    length: 256,
+    measurementUnit: 'meters',
+  },
+];
+
+const shipLength = () =>
+
+console.log(shipLength(ships[0])); // 'Titanic is 269.1 meters long'
+console.log(shipLength(ships[1])); // 'Queen Mary 2 is 1132 feet long'
+console.log(shipLength(ships[2])); // 'Yamato is 256 meters long'
 
