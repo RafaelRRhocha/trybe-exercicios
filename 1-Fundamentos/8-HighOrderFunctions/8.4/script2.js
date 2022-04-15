@@ -51,7 +51,7 @@ const books = [
   },
   {
     id: 6,
-    name: 'O Chamado de Cthulhu',
+    name: 'O Chamado de Cthulho',
     genre: 'Terror',
     author: {
       name: 'H. P. Lovecraft',
