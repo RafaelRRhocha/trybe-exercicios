@@ -8,11 +8,12 @@ const fetchJoke = () => {
   fetch(API_URL, myObject)
     .then(response => response.json())
     .then(data => {
-      const lis = `${data.joke}`;
+      const li =  document.createElement('li');
+      li.innerHTML = data.joke;
       const ul = document.querySelector('#jokes');
-      ul.appendChild(lis);
+      ul.appendChild(li);
     })
     .catch(console.log('error'));
 };
 
-window.onload = () => fetchJoke();
+// window.onload = () => fetchJoke();
