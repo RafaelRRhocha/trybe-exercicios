@@ -4,15 +4,16 @@ const coinsFunc = () => {
   fetch(url)
   .then(response => response.json())
   .then(data => {
-    const coinsFinal = data.reduce((acc, coin) => {
-      acc += `${coin.name}: ${coin.priceUsd}`
-      return acc;
-    }, '')
-
-    const coins = document.querySelector('[data-js="coinsContainers"]')
-    coins.innerHTML = coinsFinal;
-
+    const arr = [];
+    arr.push(data);
     
+    arr.forEach(coin => {
+      const li = document.createElement('li')
+      li.innerText = `${coin.name} ${coin.symbol} ${coin.priceUsd}`
+
+      const ul = document.querySelector('#coinsContainer');
+      ul.appendChild(li)
+    })
   })
 }
 coinsFunc();
