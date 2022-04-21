@@ -4,11 +4,12 @@ const coinsFunc = () => {
   fetch(url)
   .then(response => response.json())
   .then(data => {
-    const coinsFinal = data.forEach(coins => {
-      `${coins.name}: ${coins.priceUsd}`
-    });
+    const coinsFinal = data.reduce((acc, coin) => {
+      acc += `${coin.name}: ${coin.priceUsd}`
+      return acc;
+    }, '')
 
-    const coins = document.querySelector('#coinsContainer')
+    const coins = document.querySelector('[data-js="coinsContainers"]')
     coins.innerHTML = coinsFinal;
 
     
