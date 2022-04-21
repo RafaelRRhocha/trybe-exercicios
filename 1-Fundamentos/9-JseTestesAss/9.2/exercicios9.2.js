@@ -5,7 +5,8 @@ const coinsFunc = () => {
   .then(response => response.json())
   .then(array => {
 
-    array.data.forEach(coin => {
+    array.data.filter((element) => Number(element.rank) <= 10)
+    .forEach(coin => {
       const li = document.createElement('li')
       li.innerText = `${coin.name} (${coin.symbol}): ${Number(coin.priceUsd).toFixed(2)}`
 
