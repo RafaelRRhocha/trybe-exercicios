@@ -1,19 +1,7 @@
-import './App.css';
+import { List } from './Tasks'
 
-const compromissos = ['estudar js', ' ', 'estudar react'];
-
-compromissos.map((task) => `<li>${task}</li>`)
-
-const Task = (value) => {
-  return value
-}
-
-function App() {
+export function App() {
   return (
-    <div className="App">
-      <p>{Task(compromissos)}</p>
-    </div>
+    < List />
   );
 }
-
-export default App;
