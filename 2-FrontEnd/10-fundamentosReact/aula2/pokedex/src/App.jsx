@@ -1,3 +1,4 @@
+import './App.css'
 import { Pokemon } from './Pokemons'
 import { pokemons } from './Data'
 
