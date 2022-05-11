@@ -13,7 +13,7 @@ export class DadosEmprego extends Component {
 
         <label>
           Cargo:
-          <textarea maxLength={40} onMouseEnter={() => alert('Preencha com cuidado esta informação.')} required>
+          <textarea maxLength={40} onClick={() => alert('Preencha com cuidado esta informação.')} required>
 
           </textarea>
         </label>
