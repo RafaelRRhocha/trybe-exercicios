@@ -25,7 +25,7 @@ export default class App extends React.Component {
   render() {
     const { dog, loading} = this.state
     return (
-      <div className="flex flex-col justify-center">
+      <div className="py-10 m-0-auto">
         {
           loading ? (<p>Loading...</p>) :
           <img src={ dog } alt="imagem de um dog" width="200px" ></img>
