@@ -66,11 +66,24 @@ describe('teste se o teste funciona', () => {
     f1.mockImplementation(a => a.toUpperCase());
     expect(f1('tonico')).toEqual('TONICO');
   });
+});
 
+describe('testando results', () => {
+  fetchDog = jest.fn();
   //05
-  // it('Faça o teste necessário para garantir que a implementação da função foi restaurado', () => {
-  //   f1.mockReset();
-  //   f1.mockImplementation(a => a.toUpperCase());
-  //   expect(f1('tonico')).toEqual('TONICO');
+  it('O primeiro deve interpretar que a requisição se resolveu e teve como valor "request success".', async  () => {
+    fetchDog.mockResolvedValue('funcionou');
+    fetchDog();
+    expect(fetchDog).toHaveBeenCalled();
+    await expect(fetchDog()).resolves.toEqual('funcionou');
+  });
+
+  // 05
+  // it('O segundo deve interpretar que a requisição falhou e ter como valor "request failed"', async () => {
+  //   fetchDog.mockReset();
+  //   fetchDog.mockRejectedValue('não funcionou');
+  //   fetchDog();
+  //   expect(fetchDog).toHaveBeenCalled();
+  //   await expect(fetchDog()).rejects.toEqual('não funcionou');
   // });
 });
