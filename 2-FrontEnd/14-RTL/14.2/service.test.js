@@ -1,10 +1,7 @@
 let { services, f1, f2, f3, fetchDog } = require('./service');
 
-describe('teste se o teste funciona', () => {
+describe('p1', () => {
   services = jest.fn();
-  f1 = jest.fn();
-  f2 = jest.fn();
-  f3 = jest.fn();
   // 01
   it('testando se a função foi chamada', () => {
     services.mockReturnValue(3);
@@ -38,7 +35,10 @@ describe('teste se o teste funciona', () => {
     expect(services(10)).toEqual(50);
     expect(services).toHaveBeenCalled();
   });
+});
 
+describe('p2', () => {
+  f1 = f2 = f3 = jest.fn();
   // 04
   it('Desenvolva uma nova implementação para a primeira função: agora ela deve retornar a string em caixa baixa.', () => {
     f1.mockImplementation(a => a.toLowerCase());
@@ -68,7 +68,7 @@ describe('teste se o teste funciona', () => {
   });
 });
 
-describe('testando results', () => {
+describe('p3', () => {
   fetchDog = jest.fn();
   //05
   it('O primeiro deve interpretar que a requisição se resolveu e teve como valor "request success".', async  () => {
