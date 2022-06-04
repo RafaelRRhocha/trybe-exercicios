@@ -159,7 +159,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 22: Bancos de dados relacionais
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
+- [X] 22-1: _Transformando ideias em um modelo de banco de dados_
 - [ ] 22-2: _Normalização, Formas Normais e Dumps_
 - [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
 - [ ] 22-3: _[Projeto - One For All]()_
