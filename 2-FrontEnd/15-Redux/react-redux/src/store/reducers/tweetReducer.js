@@ -17,7 +17,7 @@ const tweetReducer = (state = initialState, action) => {
       return {};
     default:
       return state;
-  };
+  }
 };
 
 export default tweetReducer;
