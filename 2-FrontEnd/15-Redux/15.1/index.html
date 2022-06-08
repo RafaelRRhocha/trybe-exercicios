@@ -50,22 +50,23 @@
           case 'previous-color': {
             return {
               ...state,
-              index: state.index === state.colors.length - 1 ? 0 : state.index - 1,
+              index: state.index === 0 ? state.colors.length - 1 : state.index - 1,
             }
           };
           default: return state;
         }
       }
 
+      const store = Redux.createStore(reducer);
+
       document.querySelector('#next').addEventListener('click', () => {
         store.dispatch({ type: 'next-color' });
       });
-
+      
       document.querySelector('#previous').addEventListener('click', () => {
         store.dispatch({ type: 'previous-color' });
       });
 
-      const store = Redux.createStore(reducer);
-    </script>
+      </script>
   </body>
 </html>
