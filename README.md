@@ -192,7 +192,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 27: NodeJS
 
-- [ ] 27-1: _Express: HTTP com Node.js_
+- [X] 27-1: _Express: HTTP com Node.js_
 - [ ] 27-2: _Arquitetura de Software - Introdução ao MVC_
 - [ ] 27-3: _[Projeto - Cookmaster]()_
 
