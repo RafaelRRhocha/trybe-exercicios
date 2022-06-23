@@ -204,7 +204,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 29: NodeJS
 
-- [ ] 29-1: _NodeJS - JWT - (JSON Web Token)_
+- [X] 29-1: _NodeJS - JWT - (JSON Web Token)_
 - [ ] 29-2: _NodeJS - Upload de arquivos com Multer_
 - [ ] 29-3: _[Projeto - Cookmaster V2]()_
 
