@@ -200,7 +200,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 28-1: _Arquitetura de Software - Camada de Serviço_
 - [X] 28-2: _Arquitetura web - Rest e Restful_
-- [ ] 28-3: _[Projeto - Store Manager]()_
+- [X] 28-3: _[Projeto - Store Manager]()_
 
 ##### Bloco 29: NodeJS
 
