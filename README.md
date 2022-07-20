@@ -212,7 +212,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 30-1: _Infraestrutura - Deploy com Heroku_
 - [X] 30-2: _Deploy - Gerenciadores de Processos_
-- [X] 30-3: _[Projeto - Stranger Things]()_
+- [ ] 30-3: _[Projeto - Stranger Things]()_
 
 ##### Bloco 31: Projeto
 
