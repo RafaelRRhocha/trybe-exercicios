@@ -5,3 +5,16 @@ services:
     image: ghost:1-alpine
     ports:
       - 2368:2368
+    restart: always
+    depends_on:
+    - "database"
+    environment:
+      database__client: mysql
+      database__connection__host: database
+      database__connection__user: root
+      database__connection__password: password
+      database__connection__database: ghost
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
