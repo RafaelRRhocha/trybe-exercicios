@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bmi": "node ./bmi.js"
+    "bmi": "node ./bmi.js",
+    "personagens": "node ./personagens.js"
   },
   "keywords": [],
   "author": "",
