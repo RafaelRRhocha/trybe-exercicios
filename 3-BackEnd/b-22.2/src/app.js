@@ -21,8 +21,21 @@ const activities = [
 ];
 
 app.get('/myActivities/:id', (req, res) => {
-  const filterActivities = activities.filter(e => e.id === req.params.id);
+  const filterActivities = activities.find(e => e.id === Number(req.params.id));
   res.status(200).json(filterActivities);
+});
+
+app.get('/myActivities', (req, res) => res.status(200).json({ activities }));
+
+app.get('/filter/myActivities', (req, res) => {
+  const { status } = req.query;
+  let filteredActivities = activities;
+
+  if (status) {
+    filteredActivities = activities.filter((activity) => activity.status === status);
+  }
+
+  res.status(200).json({ activities: filteredActivities });
 });
 
 module.exports = app;
