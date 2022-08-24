@@ -32,7 +32,7 @@ app.post('/activities',
 app.post('/signup', (req, res) => {
 	const { email, password, firstName, phone } = req.body;
 
-  if ([email, password, firstName, phone].includes(undefined)) {
+  if (!email || !password || !firstName || !phone) {
 		return res.status(401).json({ message: 'Campos ausentes!' });
 	}
 
