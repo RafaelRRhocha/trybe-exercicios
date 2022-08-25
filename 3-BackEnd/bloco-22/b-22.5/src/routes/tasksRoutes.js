@@ -2,24 +2,74 @@ const express = require('express');
 
 const router = express.Router();
 
-router.post('/', (req, res) => {
-  res.status(400).json({ message: 'O endpoint POST /tasks ainda não foi implementado' });
+const tasksDB = require('../db/tasksDB');
+
+const { insert, findAll, findById, update, remove } = tasksDB;
+
+router.post('/', async (req, res) => {
+  const task = req.body;
+  try {
+    const [result] = await insert(task);
+    res.status(201).json({
+      message: `Tarefa cadastrada com sucesso com o id ${result.insertId}` });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ message: 'Ocorreu um erro ao cadastrar uma tarefa' });
+  }
 });
 
-router.put('/:id', (req, res) => {
-  res.status(400).json({ message: 'O endpoint PUT /tasks/:id ainda não foi implementado' });
+router.put('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const person = req.body;
+    const [result] = await update(person, id);
+    if (result.affectedRows > 0) {
+      res.status(200).json({ message: `Tarefa de id ${id} atualizada com sucesso` });
+    } else {
+      res.status(404).json({ message: 'Tarefa não encontrada' });
+    }
+  } catch (err) {
+    res.status(500).json({ message: err.sqlMessage });
+  }
 });
 
-router.delete('/:id', (req, res) => {
-  res.status(400).json({ message: 'O endpoint DELETE /tasks/:id ainda não foi implementado' });
+router.delete('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const [result] = await remove(id);
+    if (result.affectedRows > 0) {
+      res.status(200).json({ message: `Tarefa de id ${id} excluída com sucesso` });
+    } else {
+      res.status(404).json({ message: 'Tarefa não encontrada' });
+    }
+  } catch (err) {
+    res.status(500).json({ message: err.sqlMessage });
+  }
 });
 
-router.get('/', (req, res) => {
-  res.status(400).json({ message: 'O endpoint GET /tasks ainda não foi implementado' });
+router.get('/', async (_req, res) => {
+  try {
+    const [result] = await findAll();
+    res.status(200).json(result);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ message: err.sqlMessage });
+  }
 });
 
-router.get('/:id', (req, res) => {
-  res.status(400).json({ message: 'O endpoint GET /tasks/:id ainda não foi implementado' });
+router.get('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const [[result]] = await findById(id);
+    if (result) {
+      res.status(200).json(result);
+    } else {
+      res.status(404).json({ message: 'Tarefa não encontrada' });
+    }
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ message: err.sqlMessage });
+  }
 });
 
 module.exports = router;
