@@ -1,3 +1,4 @@
+const camelize = require('camelize');
 const snakeize = require('snakeize');
 const connection = require('./connection');
 
@@ -18,6 +19,36 @@ const insert = async (travel) => {
   return insertId;
 };
 
+const findById = async (travelId) => {
+  const [[result]] = await connection.execute(
+    'SELECT * FROM travels WHERE id = ?',
+    [travelId],
+  );
+  return camelize(result);
+};
+
+const findByTravelStatusId = async (travelStatusId) => {
+  const [result] = await connection.execute(
+    'SELECT * FROM travels WHERE travel_status_id = ?',
+    [travelStatusId],
+  );
+  return camelize(result);
+};
+
+const updateById = async (travelId, dataToUpdate) => {
+  const formattedColumns = Object.keys(snakeize(dataToUpdate))
+    .map((key) => `${key} = ?`)
+    .join(', ');
+  
+    return connection.execute(
+      `UPDATE travels SET ${formattedColumns} WHERE id = ?`,
+      [...Object.values(dataToUpdate), travelId],
+    );
+};
+
 module.exports = {
   insert,
+  findById,
+  findByTravelStatusId,
+  updateById,
 };
