@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.rectangle = exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
+const greeter = (name) => `Olá ${name}!`;
+exports.greeter = greeter;
+const personAge = (name, age) => `${name} tem ${age} anos!`;
+exports.personAge = personAge;
+const add = (x, y) => x + y;
+exports.add = add;
+const sumArray = (numbers) => numbers.reduce(exports.add, 0);
+exports.sumArray = sumArray;
+const triangle = (base, height) => (base * height) / 2;
+exports.triangle = triangle;
+const square = (side) => side ** 2;
+exports.square = square;
+const rectangle = (base, height) => base * height;
+exports.rectangle = rectangle;
