@@ -1,4 +1,3 @@
-import { Employees } from './model/Employees';
 import { Student } from './model/Student';
 
 const student = new Student(
@@ -11,12 +10,5 @@ const student = new Student(
 
 console.table(student);
 
-const employees = new Employees(
-  Employees.generateRegistrationId(),
-  3.5,
-  '27/07/2003',
-  'Ana',
-  'História'
-);
 
 console.table(employees);
