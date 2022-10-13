@@ -2,7 +2,7 @@ import { Employees } from './model/Employees';
 import { Student } from './model/Student';
 
 const student = new Student(
-  'Jessy',
+  'Jessy James',
   '26/05/1995',
   Student.generateEnrollment(),
   [10, 9, 8, 7],
