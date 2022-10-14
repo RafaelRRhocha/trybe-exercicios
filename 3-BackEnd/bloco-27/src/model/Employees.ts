@@ -2,12 +2,12 @@ import { IEmployee } from "../interfaces/Employee";
 import { Subject } from "./Subject";
 
 export class Employees extends Subject implements IEmployee {
-  registration: any
+  registration: string
   salary: number
-  admissionDate: any
-  name: any
+  admissionDate: string
+  name: string
 
-  constructor(registration: any, salary: number, admissionDate: any, name: any, subjects: any) {
+  constructor(registration: string, salary: number, admissionDate: string, name: string, subjects: string) {
     super(subjects)
     this.registration = registration
     this.salary = salary
