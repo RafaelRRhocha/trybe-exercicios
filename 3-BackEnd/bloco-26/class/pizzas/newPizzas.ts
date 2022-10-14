@@ -1,7 +1,7 @@
 import typesPizza from "./@types";
 
 const calabresa: typesPizza = {
-  flavor: "Calabresa",
+  flavor: "Jason",
   slices: 8
 }
 
