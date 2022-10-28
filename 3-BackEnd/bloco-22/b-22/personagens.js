@@ -1,8 +1,8 @@
 const fs = require('fs').promises;
 const readline = require('readline-sync');
 
-const fetch = async () => {
-  const request = await fs.readFile('./simpsons.json', 'utf-8');
+const fetch = () => {
+  const request = fs.readFile('./simpsons.json', 'utf-8');
   return JSON.parse(request);
 }
 
