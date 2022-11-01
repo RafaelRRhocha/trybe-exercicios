@@ -48,13 +48,9 @@ services:
       MYSQL_DATABASE: trybecardb
     ports:
       - "33060:3306"
-    
 
-# Lista de redes que os containeres irão utilizar
 networks:
-  # Rede padrão, criada automaticamente
   default:
-    # Dá um nome específico à rede padrão
     name:  trybecar_net
 
 

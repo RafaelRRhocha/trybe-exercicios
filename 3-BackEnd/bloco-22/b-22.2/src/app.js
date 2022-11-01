@@ -5,7 +5,7 @@ const app = express();
 const activities = [
   {
     id: 1,
-    description: 'Banho no cachorro',
+    description: 'Banho cachorro',
     status: 'A fazer',
   },
   {

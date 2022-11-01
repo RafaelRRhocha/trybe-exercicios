@@ -6,7 +6,7 @@ let info = {
     recorrente: 'Sim'
   };
 
-    console.log("bem vinda,", info.personagem);
+  console.log("bem vinda,", info.personagem);
   console.log(info);
 
   for (disney in info) {
