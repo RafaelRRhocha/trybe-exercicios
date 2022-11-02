@@ -5,7 +5,11 @@ fetch(`https://pokeapi.co/api/v2/pokemon/1`)
     data() {
       return {
         pokeName: json.name,
+        url: 'https://www.pokemon.com/br/pokedex/bulbasaur'
       }
+    },
+    methods: {
+      somar() {}
     }
   };
 
