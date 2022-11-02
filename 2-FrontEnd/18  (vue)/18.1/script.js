@@ -8,9 +8,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/1`)
         url: 'https://www.pokemon.com/br/pokedex/bulbasaur'
       }
     },
-    methods: {
-      somar() {}
-    }
+    methods: {}
   };
 
   Vue.createApp(vm).mount('#app');
