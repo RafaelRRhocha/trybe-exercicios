@@ -5,12 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/vue@next"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Primeiro App em Vue</title>
 </head>
 <body>
   <div id="app">
-    <p>Esse é o melhor pokemon <a :href="url" target="_blank">{{ pokeName }}</a></p>
-    <button type="button" value="buttonValue" @click="onChange($event.target.value)">button</button>
+    <div class="div-principal border" :class="cor">
+      cor: {{ cor }} <br />
+      mouseX: {{ mouseX }} <br />
+      mouseY: {{ mouseY }} <br />
+    </div>
+    <hr />
+    <div @click="changeColor('verde')" class="div-comum border"></div>
+    <div
+      @mouseover="changeColor('azul')"
+      @mouseout="changeColor('vermelho')"
+      class="div-comum border"
+    >
+    </div>
+    <div @mousemove="catchMouse($event)" class="div-comum border"></div>
   </div>
   <script src="./script.js"></script>
 </body>

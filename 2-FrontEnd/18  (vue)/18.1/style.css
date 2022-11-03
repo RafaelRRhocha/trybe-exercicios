@@ -1,0 +1,26 @@
+.div-principal {
+  height: 200px;
+  width: 200px;
+}
+
+.div-comum {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.verde {
+  background-color: green;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.vermelho {
+  background-color: red;
+}

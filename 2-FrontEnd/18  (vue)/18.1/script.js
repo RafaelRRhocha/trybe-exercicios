@@ -1,20 +1,20 @@
-fetch(`https://pokeapi.co/api/v2/pokemon/1`)
-.then(response => response.json())
-.then(json => {
-  const vm = {
-    data() {
-      return {
-        pokeName: json.name,
-        url: 'https://www.pokemon.com/br/pokedex/bulbasaur',
-        buttonValue: 'value do button'
-      }
-    },
-    methods: {
-      onChange(value) {
-        console.log(value)
-      }
+const vm = {
+  data() {
+    return {
+      cor: '',
+      mouseX: 0,
+      mouseY: 0
     }
-  };
+  },
+  methods: {
+    changeColor(e) {
+      this.cor = e
+    },
+    catchMouse(e) {
+      this.mouseX = e.clientX
+      this.mouseY = e.clientY
+    }
+  }
+};
 
-  Vue.createApp(vm).mount('#app');
-});
+Vue.createApp(vm).mount('#app');
