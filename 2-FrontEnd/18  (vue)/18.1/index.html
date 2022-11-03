@@ -24,6 +24,10 @@
     >
     </div>
     <div @mousemove="catchMouse($event)" class="div-comum border"></div>
+    <div>
+      <input type="text" @keyup="getInputText($event)" /> <br />
+      <p>Texto: {{ text }}</p>
+    </div>
   </div>
   <script src="./script.js"></script>
 </body>

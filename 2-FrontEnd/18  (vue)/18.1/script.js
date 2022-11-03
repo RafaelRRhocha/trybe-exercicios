@@ -3,7 +3,8 @@ const vm = {
     return {
       cor: '',
       mouseX: 0,
-      mouseY: 0
+      mouseY: 0,
+      text: ''
     }
   },
   methods: {
@@ -13,6 +14,9 @@ const vm = {
     catchMouse(e) {
       this.mouseX = e.clientX
       this.mouseY = e.clientY
+    },
+    getInputText(e) {
+      this.text += e.key
     }
   }
 };
