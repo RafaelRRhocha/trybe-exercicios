@@ -11,18 +11,21 @@
 <body>
   <div id="app">
     <form>
-      <span>Nome Completo:</span>
-      <input type="text" id="nomeInput">
-      <span>Número De Telefone</span>
-      <input type="number" id="telefoneInput">
-      <button @click="setInfos" type="button">
-        <p v-if="!enviado">Enviar Forms</p>
-        <p v-if="enviado">Forms Enviado</p>
-      </button>
+      <div v-show="!enviado">
+        <span>Nome Completo:</span>
+        <input type="text" id="nomeInput"> <br />
+        <span>Número De Telefone</span>
+        <input type="number" id="telefoneInput"> <br />
+        <button @click="setInfos" type="button">
+          <p v-if="!enviado">Enviar Forms</p>
+          <p v-if="enviado">Forms Enviado</p>
+        </button>
+      </div>
       <div v-show="enviado">
         <p>Seu nome é: {{ nome }}</p>
         <p>Seu telefone é: {{ telefone }}</p>
         <p>Entraremos em Contato em Breve!</p>
+        <button type="button" @click="enviado = false">Voltar</button>
       </div>
     </form>
   </div>
