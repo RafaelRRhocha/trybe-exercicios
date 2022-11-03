@@ -10,24 +10,21 @@
 </head>
 <body>
   <div id="app">
-    <div class="div-principal border" :class="cor">
-      cor: {{ cor }} <br />
-      mouseX: {{ mouseX }} <br />
-      mouseY: {{ mouseY }} <br />
-    </div>
-    <hr />
-    <div @click="changeColor('verde')" class="div-comum border"></div>
-    <div
-      @mouseover="changeColor('azul')"
-      @mouseout="changeColor('vermelho')"
-      class="div-comum border"
-    >
-    </div>
-    <div @mousemove="catchMouse($event)" class="div-comum border"></div>
-    <div>
-      <input type="text" @keyup="getInputText($event)" /> <br />
-      <p>Texto: {{ text }}</p>
-    </div>
+    <form>
+      <span>Nome Completo:</span>
+      <input type="text" id="nomeInput">
+      <span>Número De Telefone</span>
+      <input type="number" id="telefoneInput">
+      <button @click="setInfos" type="button">
+        <p v-if="!enviado">Enviar Forms</p>
+        <p v-if="enviado">Forms Enviado</p>
+      </button>
+      <div v-show="enviado">
+        <p>Seu nome é: {{ nome }}</p>
+        <p>Seu telefone é: {{ telefone }}</p>
+        <p>Entraremos em Contato em Breve!</p>
+      </div>
+    </form>
   </div>
   <script src="./script.js"></script>
 </body>

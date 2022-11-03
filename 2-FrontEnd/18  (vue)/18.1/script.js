@@ -1,22 +1,18 @@
 const vm = {
   data() {
     return {
-      cor: '',
-      mouseX: 0,
-      mouseY: 0,
-      text: ''
+      nome: '',
+      telefone: '',
+      enviado: false
     }
   },
   methods: {
-    changeColor(e) {
-      this.cor = e
-    },
-    catchMouse(e) {
-      this.mouseX = e.clientX
-      this.mouseY = e.clientY
-    },
-    getInputText(e) {
-      this.text += e.key
+    setInfos() {
+      this.nome = nomeInput.value
+      this.telefone = telefoneInput.value
+      this.enviado = true
+      nomeInput.value = ''
+      telefoneInput.value = ''
     }
   }
 };
