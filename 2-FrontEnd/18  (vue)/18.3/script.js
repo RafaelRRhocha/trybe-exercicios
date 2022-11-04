@@ -1,33 +1,25 @@
 const vm = {
   data() {
     return {
-      pacientes: []
+      texto: '',
+      pacientes: [
+        { nome: 'dada' },
+        { nome: 'rafael' },
+        { nome: 'otoni' },
+        { nome: 'jessy' },
+        { nome: 'gostinho' },
+      ],
+      pacientesCorrespondentes: [],
     }
   },
-  methods: {
-    cadastrarPaciente() {
-      this.pacientes.push({
-        nome: inputNome.value,
-        idade: inputIdade.value,
-        plano: inputPlano.value
-      });
-    },
-  },
-  computed: {
-    ultimoPaciente() {
-      let key = this.pacientes.length -1;
-      let txt = '';
-
-      txt = `Nome: ${this.pacientes[key].nome},
-            Idade: ${this.pacientes[key].idade},
-            Plano: ${this.pacientes[key].plano}`
-
-      return txt;
-    },
-    planoSus() {
-      return this.pacientes.filter(e => e.plano === 'sus');
+  methods: {},
+  computed: {},
+  watch: {
+    texto(newValue) {
+      console.log(this.pacientesCorrespondentes);
+      this.pacientesCorrespondentes = this.pacientes.filter(e => e.nome.match(newValue))
     }
-  }
+  },
 };
 
 Vue.createApp(vm).mount('#app');
