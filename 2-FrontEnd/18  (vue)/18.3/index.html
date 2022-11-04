@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>ai ai ai ai</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Cadastro De Pacientes:</h1>
+    <div>
+      <p>Nome:</p> <input type="text" id="inputNome" />
+      <p>Idade:</p> <input type="number" id="inputIdade" />
+      <p>Plano:</p> <input type="text" id="inputPlano" /> <br /> <br />
+      <button type="button" @click="cadastrarPaciente()">Cadastrar</button>
+    </div>
+    <div v-if="pacientes.length > 0">
+      <h1>Ùltimo Paciente Cadastrado:</h1>
+      <p>{{ ultimoPaciente }}</p>
+  
+      <h1>Pacientes com o Plano Sus:</h1>
+      <p v-for="paciente in planoSus">{{ paciente.nome }}</p>
+  
+      <h1>Pacientes Cadastrados:</h1>
+      <p v-for="paciente in pacientes">{{ paciente.nome }}</p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
