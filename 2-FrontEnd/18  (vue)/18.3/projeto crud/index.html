@@ -6,10 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <script src="https://unpkg.com/vue@next"></script>
-  <title>ai ai ai ai</title>
+  <title>crud</title>
 </head>
 <body>
   <div id="app">
+    <input v-model="prefix" placeholder="Filter Users">
+    <div class="selecte">
+      <select size="5" v-model="selected">
+        <option v-for="name in filteredNames" :key="name">{{ name }}</option>
+      </select>
+      <div class="inputs">
+          <p>Name:</p> <input v-model="first" />
+          <p>LastName:</p> <input v-model="last" />
+      </div>
+    </div>
+    <div class="buttons">
+      <button @click="Create()">Create</button>
+      <button @click="Update()">Update</button>
+      <button @click="Delete()">Delete</button>
+    </div>
   </div>
   <script src="./script.js"></script>
 </body>

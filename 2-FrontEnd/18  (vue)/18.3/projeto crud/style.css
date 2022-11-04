@@ -1,0 +1,16 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selecte {
+  display: flex;
+  gap: 10px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10pxE;
+}
