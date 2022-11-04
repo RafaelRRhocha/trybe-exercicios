@@ -11,16 +11,16 @@ const vm = {
         idade: inputIdade.value,
         plano: inputPlano.value
       });
-    }
+    },
   },
   computed: {
     ultimoPaciente() {
       let key = this.pacientes.length -1;
       let txt = '';
 
-      txt += 'Nome: ' + this.pacientes[key].nome
-      txt += ', Idade: ' + this.pacientes[key].idade
-      txt += ', Plano: ' + this.pacientes[key].plano
+      txt = `Nome: ${this.pacientes[key].nome},
+            Idade: ${this.pacientes[key].idade},
+            Plano: ${this.pacientes[key].plano}`
 
       return txt;
     },
