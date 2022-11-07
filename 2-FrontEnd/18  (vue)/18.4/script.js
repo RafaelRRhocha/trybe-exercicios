@@ -5,11 +5,13 @@ const vm = {
       tipoDaSalada: [],
       tipoDeMolho: [],
       tipoDaCarne: '',
-      etapa: 1
+      etapa: 1,
+      nome: '',
+      endereco: ''
     }
   },
   methods: {
-    finalizarPedido() {
+    proxEtapa() {
       if(!this.tipoDoPao && !this.tipoDaCarne) {
         alert('Selecione um tipo de Pão e um Tipo de Carne')
       }

@@ -32,7 +32,7 @@
           </div>
         </div>
 
-        <div class="col-md-6" v-show="etapa === 1">
+        <div class="col-md-6" v-if="etapa === 1">
           <div class="row mt-4">
             <div class="col">
               <div class="card">
@@ -144,7 +144,7 @@
               <button
                 type="button"
                 class="btn btn-success"
-                @click="finalizarPedido()"
+                @click="proxEtapa()"
               >
                 Finalizar Pedido
               </button>
@@ -152,9 +152,27 @@
           </div>
         </div>
 
-        <div class="col-md-6" v-show="etapa === 2">
+        <div class="col-md-6" v-if="etapa === 2">
           <div class="row mt-4">
-            teste
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  INFORME SEUS DADOS
+                </div>
+                <div class="card-body">
+                  <div class="mb-3">
+                    <div class="mt-2">
+                      <p>Nome:</p>
+                      <input type="text" class="form-control" v-model="nome" />
+                    </div>
+                    <div class="mt-2">
+                      <p>Endereço:</p>
+                      <input type="text" class="form-control" v-model="endereco" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
