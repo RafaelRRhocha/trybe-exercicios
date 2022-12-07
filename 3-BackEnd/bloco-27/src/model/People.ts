@@ -4,7 +4,7 @@ export class People {
 
   constructor(name: string, birthDate: string) {
     this.name = name
-    this.birthDate = birthDate
+    this.birthDate = birt
   }
 
   getName() {
